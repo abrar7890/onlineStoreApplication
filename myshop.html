@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="shop.js"></script>
+	<link rel="stylesheet" type="text/css" href="shop.css">
+	<title>MY SHOP</title>
+</head>
+<body>
+    <h1>MY SHOP</h1>
+    <form name="myform" method="POST" onsubmit="return formSubmit();" action="">
+        <label>NAME*:</label>
+        <input id="name" type="text" name="name" value="Arsh Brar" required><br/>
+
+        <label>EMAIL*:</label>
+        <input id="email" type="email@domain.com" name="email" value="arsh@gmail.com" required><br/>
+
+        <label>PHONE*:</label>
+        <input id="phone" type="phone" placeholder="123-123-1234" name="phone" required><br/>
+
+        <label>ADDRESS*:</label>
+        <input id="address" type="address" name="address" value="113 King Street" required><br/>
+
+        <label>CITY*:</label>
+        <input id="city" type="city" name="city" value="Kitchener" required><br/>
+
+        <label>POST CODE*:</label>
+        <input id="postcode" type="postcode" placeholder="X9X 9X9" name="postcode" required><br/>
+
+        <label>PROVINCE*:</label>
+        <select name="province" id="province">
+            <option value="Ontario" selected>Ontario</option>
+            <option value="Quebec">Quebec</option>
+            <option value="British Columbia">British Columbia</option>
+            <option value="Alberta">Alberta</option>
+            <option value="Manitoba">Manitoba</option>
+            <option value="New-Brunswick">New-Brunswick</option>
+            <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+            <option value="Northwest Territories">Northwest Territories</option>
+            <option value="Nova Scotia">Nova Scotia</option>
+            <option value="Nunavut">Nunavut</option>
+            <option value="Prince Edward Island">Prince Edward Island (PEI)</option>
+            <option value="Yukon">Yukon</option>
+            <option value="Saskatchewan">Saskatchewan</option>
+        </select><br/>
+
+        <label>PRODUCT 1:</label>
+        <input id="product1" type="product" name="product1"><br/>
+
+        <label>PRODUCT 2:</label>
+        <input id="product2" type="product" name="product2"><br/>
+
+        <label>PRODUCT 3:</label>
+        <input id="product3" type="product" name="product3"><br/>
+
+        <label>DELIVERY TIME:</label>
+        <select name="deliverytime" id="deliverytime">
+            <option value="1">1 Day</option>
+            <option value="2">2 Days</option>
+            <option value="3" selected>3 Days</option>
+            <option value="4">4 Days</option>
+        </select><br/>
+
+        <input type="submit" value="PLACE ORDER" onclick="formSubmit();">
+    </form>
+        <div class="formOutput">
+        <p id="errors"></p>
+        <p id="invoice"></p> <!--this is where invoice will show up.-->
+        </div>
+
+</body>
+</html>
